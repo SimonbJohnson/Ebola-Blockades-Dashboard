@@ -13,6 +13,6 @@
     top: 0px;
 }
 
-#map {
+.container {
     min-width:600px;
 }
