@@ -12,3 +12,7 @@
     position: fixed;
     top: 0px;
 }
+
+#map {
+    min-width:600px;
+}
