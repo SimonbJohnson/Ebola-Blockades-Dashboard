@@ -1,0 +1,14 @@
+.res_box {
+    border-bottom-style: solid;
+    border-bottom-color: #aaaaaa;
+    border-bottom-width: 1px;
+}
+
+.res {
+    margin-bottom: 40px;
+}
+
+.sticky {
+    position: fixed;
+    top: 0px;
+}
