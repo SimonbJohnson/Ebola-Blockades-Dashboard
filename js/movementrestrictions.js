@@ -123,7 +123,7 @@ function setadmRestrictions(country,adm,adm_name,data){
     } else {
         admLevel = "adm2_id";
         admNextLevel = "adm3";
-    }   
+    }
     $.each(data,function(i,e){
         if(e[admLevel]===adm && e[admNextLevel] === "n/a" && e.Date_to==="n/a"){
             htmlcur = htmlcur +convertAdmResToHTML(e);
@@ -181,7 +181,6 @@ function focusOn(country){
 
 function focusOnAdm(country,adm){
     focusAdm = adm;
-    console.log(country);
     d3.selectAll(".region")
         .attr("fill",function(d){
             if(d.properties.CNTRY_CODE===country){
