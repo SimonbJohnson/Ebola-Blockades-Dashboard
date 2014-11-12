@@ -1,3 +1,209 @@
+function removeDuplicates(dataset) {
+    return dataset.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
+}
+
+function buildObject(country, restriction_type, restriction_nature, dataset) {
+    for (var i = 0; i < restriction_type.length; i++) {  
+        var temp_data = [];
+        var obj_data = {};
+        for (var j =0; j < moveRes.length; j++) {
+            if (country === "All") {
+                if (restriction_type[i] === moveRes[j].Type_of_restriction) {
+                    if (temp_data.length === 0)
+                        temp_data[0] = moveRes[j].Nature_of_restriction;
+                    else
+                        temp_data.push(moveRes[j].Nature_of_restriction);        
+                }
+            }
+            else {
+                if (restriction_type[i] === moveRes[j].Type_of_restriction && country === moveRes[j].Country) {
+                    if (temp_data.length === 0)
+                        temp_data[0] = moveRes[j].Nature_of_restriction;
+                    else
+                        temp_data.push(moveRes[j].Nature_of_restriction);        
+                }
+            }
+        }
+        for (var j = 0; j < restriction_nature.length; j++) {
+            var count = 0;
+            for (x in temp_data) {
+                if (restriction_nature[j] === temp_data[x])
+                    count++;
+            }
+            obj_data[restriction_nature[j]] = count;
+        }    
+        if (dataset.length === 0) {
+            dataset[0] = obj_data;
+        }
+        else {
+            dataset.push(obj_data);
+        }
+    };
+    return dataset;
+}
+
+function generateBarChart(id) {
+    restriction_type = moveRes.map(function (d) {
+        return d.Type_of_restriction;
+    });
+    restriction_nature = moveRes.map(function (d) {
+        return d.Nature_of_restriction;
+    });
+
+    // remove the duplicates
+    restriction_type = removeDuplicates(restriction_type);
+    restriction_nature = removeDuplicates(restriction_nature);
+    
+    var num_samples = restriction_type.length,  // number of samples per layer
+        num_layers = restriction_nature.length;  // number of layers
+
+    // get the data from moveRes in data.js, the final data for the bar chart is in the array dataset[]
+    var dataset = [];
+        dataset = buildObject("All", restriction_type, restriction_nature, dataset);
+
+    var stack = d3.layout.stack(),
+        layers = stack(d3.range(num_layers).map(function(d) { 
+            var a = [];
+            for (var i = 0; i < num_samples; ++i) {
+                a[i] = {x: restriction_type[i], y: dataset[i][restriction_nature[d]]};  
+            }
+            return a;
+        })),
+        //the largest single layer
+        max_group = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y; }); }),
+         //the largest stack
+        max_stack = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
+
+    var margin = {top: 0, right: 10, bottom: 20, left: 50},
+        width = 683 - margin.left - margin.right,
+        height = 263 - margin.top - margin.bottom;
+
+    var x = d3.scale.linear()
+            .domain([0, max_stack])
+            .range([0, (width-120)]);
+
+    var y = d3.scale.ordinal()
+            .domain(restriction_type)
+            .rangeRoundBands([2, height-160], .08);
+
+    var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient('bottom');    
+    
+    var yAxis = d3.svg.axis()
+            .scale(y)
+            .tickSize(0)
+            .orient('left');
+    
+    var colors = d3.scale.category10();
+
+    var svg = d3.select(id).append("svg")
+                .attr("width", width + margin.left + margin.right)
+                .attr("height", height + margin.top + margin.bottom)
+                .append("g")
+                .attr("transform", "translate(" + (margin.left + 50) + "," + margin.top + ")");
+
+    var layer = svg.selectAll(".layer")
+                .data(layers)
+                .enter().append("g")
+                .attr("class", "layer")
+                .style("fill", function(d, i) { return colors(i); });
+    
+    var rect = layer.selectAll("rect")
+            .data(function(d) { return d; })
+            .enter().append("rect")
+            .attr("y", function(d) { return y(d.x); })
+            .attr("x", function(d) { return x(d.y0); })
+            .attr("height", y.rangeBand())
+            .attr("width", function(d) { return x(d.y); });
+    
+    svg.append("g")
+        .attr("class", "x_axis")
+        .attr("transform", "translate(0," + [height-160] + ")") // corresponding to y
+        .call(xAxis);
+
+    svg.append('g')
+        .attr('class', 'y_axis')
+        .call(yAxis);
+    
+    // color description
+     restriction_nature.forEach(function (s, i) {
+        svg.append('rect')
+            .attr('fill', colors(i))
+            .attr('width', 10)
+            .attr('height', 10)
+            .attr('x', i%2*width/2)
+            .attr('y', Math.floor(i/2) * 24 + 130);
+        svg.append('text')
+            .attr('fill', 'black')
+            .attr('x', i%2*width/2+20)
+            .attr('y', Math.floor(i/2) * 24 + 140)
+            .text(s);
+    }); 
+}
+
+function transitionBarChart(id, country) {
+    restriction_type = moveRes.map(function (d) {
+        return d.Type_of_restriction;
+    });
+    restriction_nature = moveRes.map(function (d) {
+        return d.Nature_of_restriction;
+    });
+    // remove the duplicates
+    restriction_type = removeDuplicates(restriction_type);
+    restriction_nature = removeDuplicates(restriction_nature);
+    
+    var num_samples = restriction_type.length,
+        num_layers = restriction_nature.length;
+    
+    // get the data from moveRes in data.js, the final data for the bar chart is in the array dataset[]
+    var dataset = [];
+    dataset = buildObject(country, restriction_type, restriction_nature, dataset);
+    
+    var stack = d3.layout.stack(),
+        layers = stack(d3.range(num_layers).map(function(d) { 
+            var a = [];
+            for (var i = 0; i < num_samples; ++i) {
+                a[i] = {x: restriction_type[i], y: dataset[i][restriction_nature[d]]};  
+            }
+            return a;
+        }));
+        
+     //the largest stack
+     var max_stack = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
+        
+     var margin = {top: 0, right: 10, bottom: 20, left: 50},
+        width = 683 - margin.left - margin.right,
+        height = 263 - margin.top - margin.bottom;
+    
+    var x = d3.scale.linear()
+            .domain([0, max_stack])
+            .range([0, (width-120)]);
+    
+    var y = d3.scale.ordinal()
+           .domain(restriction_type)
+            .rangeRoundBands([2, height-160], .08);
+    
+    var xAxis = d3.svg.axis()
+            .scale(x)
+            .orient('bottom');  
+
+    var layer = d3.select(id).selectAll("g.layer")
+                .data(layers);
+               
+    rect = layer.selectAll("rect") 
+        .data(function(d) { return d; })  // match the new data to the existing rectangles
+        .transition().duration(500)
+        .attr("y", function(d) { return y(d.x); })
+        .attr("x", function(d) { return x(d.y0); })
+        .attr("height", y.rangeBand())
+        .attr("width", function(d) { return x(d.y); }); 
+
+    d3.select("g.x_axis")
+        .attr("transform", "translate(0," + [height-160] + ")") // corresponding to y
+        .call(xAxis);
+}
+
 function generateMap(){
     var margin = {top: 10, right: 10, bottom: 10, left: 10},
     width = $('#map').width() - margin.left - margin.right,
@@ -38,7 +244,8 @@ function generateMap(){
             if(d.properties.ISO3 === "GIN" || d.properties.ISO3 === "SLE" || d.properties.ISO3 === "LBR"){
                 d3.select(this).attr("fill","#ffffff");
                 setCountryRestrictions(d.properties.NAME,moveRes);
-                focusOn(d.properties.ISO3);                
+                focusOn(d.properties.ISO3);
+                transitionBarChart("#bar_chart", d.properties.NAME);
             }            
         });
 
@@ -199,15 +406,16 @@ function stickydiv(){
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
     if (window_top > div_top && focusCountry!==""&&$(window).width()>975){
-        $('#map').addClass('sticky');
+        $('#graphic').addClass('sticky');
     }
     else{
-        $('#map').removeClass('sticky');
+        $('#graphic').removeClass('sticky');
     }
 };
 
 var focusCountry="";
 var focusAdm ="";
+generateBarChart("#bar_chart");
 generateMap();
 
 $(window).scroll(function(){

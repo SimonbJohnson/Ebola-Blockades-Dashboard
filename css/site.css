@@ -16,3 +16,9 @@
 .container {
     min-width:600px;
 }
+
+.x_axis path, .x_axis line {
+    fill: none;
+    stroke: black;
+    shape-rendering: crispEdges;
+}
