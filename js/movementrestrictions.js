@@ -407,10 +407,10 @@ function stickydiv(){
     var window_top = $(window).scrollTop();
     var div_top = $('#sticky-anchor').offset().top;
     if (window_top > div_top && focusCountry!==""&&$(window).width()>975){
-        $('#map').addClass('sticky');
+        $('#graphic').addClass('sticky');
     }
     else{
-        $('#map').removeClass('sticky');
+        $('#graphic').removeClass('sticky');
     }
 };
 
