@@ -74,9 +74,9 @@ function generateBarChart(id) {
          //the largest stack
         max_stack = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
 
-    var margin = {top: 0, right: 10, bottom: 20, left: 50},
+    var margin = {top: 0, right: 40, bottom: 20, left: 100},
         width = 683 - margin.left - margin.right,
-        height = 263 - margin.top - margin.bottom;
+        height = 190 - margin.top - margin.bottom;
 
     var x = d3.scale.linear()
             .domain([0, max_stack])
@@ -84,7 +84,7 @@ function generateBarChart(id) {
 
     var y = d3.scale.ordinal()
             .domain(restriction_type)
-            .rangeRoundBands([2, height-160], .08);
+            .rangeRoundBands([2, height-100], .08);
 
     var xAxis = d3.svg.axis()
             .scale(x)
@@ -98,10 +98,10 @@ function generateBarChart(id) {
     var colors = d3.scale.category10();
 
     var svg = d3.select(id).append("svg")
-                .attr("width", width + margin.left + margin.right)
-                .attr("height", height + margin.top + margin.bottom)
+                .attr("width", width)
+                .attr("height", height)
                 .append("g")
-                .attr("transform", "translate(" + (margin.left + 50) + "," + margin.top + ")");
+                .attr("transform", "translate(" + (margin.left) + "," + margin.top + ")");
 
     var layer = svg.selectAll(".layer")
                 .data(layers)
@@ -119,7 +119,7 @@ function generateBarChart(id) {
     
     svg.append("g")
         .attr("class", "x_axis")
-        .attr("transform", "translate(0," + [height-160] + ")") // corresponding to y
+        .attr("transform", "translate(0," + [height-100] + ")") // corresponding to y
         .call(xAxis);
 
     svg.append('g')
@@ -132,12 +132,12 @@ function generateBarChart(id) {
             .attr('fill', colors(i))
             .attr('width', 10)
             .attr('height', 10)
-            .attr('x', i%2*width/2)
-            .attr('y', Math.floor(i/2) * 24 + 130);
+            .attr('x', i%3*width/3-margin.left)
+            .attr('y', Math.floor(i/3) * 24 + 100);
         svg.append('text')
             .attr('fill', 'black')
-            .attr('x', i%2*width/2+20)
-            .attr('y', Math.floor(i/2) * 24 + 140)
+            .attr('x', i%3*width/3+20-margin.left)
+            .attr('y', Math.floor(i/3) * 24 + 110)
             .text(s);
     }); 
 }
@@ -172,9 +172,9 @@ function transitionBarChart(id, country) {
      //the largest stack
      var max_stack = d3.max(layers, function(layer) { return d3.max(layer, function(d) { return d.y0 + d.y; }); });
         
-     var margin = {top: 0, right: 10, bottom: 20, left: 50},
+    var margin = {top: 0, right: 40, bottom: 20, left: 100},
         width = 683 - margin.left - margin.right,
-        height = 263 - margin.top - margin.bottom;
+        height = 240 - margin.top - margin.bottom;
     
     var x = d3.scale.linear()
             .domain([0, max_stack])
