@@ -26,17 +26,27 @@ function generateMap(){
         .attr("class","country")
         .on("mouseover",function(d){
             if(d.properties.ISO3 === "GIN" || d.properties.ISO3 === "SLE" || d.properties.ISO3 === "LBR"){
-                if(focusCountry!=d.properties.ISO3){d3.select(this).attr("fill","steelblue");}
+                if(focusCountry!=d.properties.ISO3){
+                    d3.select(this)
+                        .attr("stroke","steelblue")
+                        .attr("stroke-width",5);
+                }
             }
         })
         .on("mouseout",function(d){
             if(d.properties.ISO3 === "GIN" || d.properties.ISO3 === "SLE" || d.properties.ISO3 === "LBR"){
-                if(focusCountry!=d.properties.ISO3){d3.select(this).attr("fill","#ffffff");}
+                if(focusCountry!=d.properties.ISO3){
+                    d3.select(this)
+                        .attr("stroke","#aaaaaa")
+                        .attr("stroke-width",1);
+                }
             }
         })
         .on("click",function(d){
             if(d.properties.ISO3 === "GIN" || d.properties.ISO3 === "SLE" || d.properties.ISO3 === "LBR"){
-                d3.select(this).attr("fill","#ffffff");
+                    d3.select(this)
+                        .attr("stroke","#aaaaaa")
+                        .attr("stroke-width",1);
                 setCountryRestrictions(d.properties.NAME,moveRes);
                 focusOn(d.properties.ISO3);                
             }            
@@ -75,16 +85,21 @@ function generateMap(){
         .attr("class","region")
         .on("mouseover",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
-                d3.select(this).attr("fill","steelblue");
+                    d3.select(this)
+                        .attr("stroke","steelblue")
+                        .attr("stroke-width",5);
             }
         })
         .on("mouseout",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
-                if(focusAdm==="" || d.properties.PCODE_REF ===focusAdm){
-                    d3.select(this).attr("fill","#ff9999");
-                } else {
-                    d3.select(this).attr("fill","#ffffff");
-                }
+                //if(focusAdm==="" || d.properties.PCODE_REF ===focusAdm){
+                //    d3.select(this).attr("fill","#FFCA28");
+                //} else {
+                //    d3.select(this).attr("fill","#ffffff");
+                //}
+                    d3.select(this)
+                        .attr("stroke","#aaaaaa")
+                        .attr("stroke-width",1);                
             }
         })
         .on("click",function(d){
@@ -172,7 +187,7 @@ function focusOn(country){
         })
         .attr("fill",function(d){
             if(d.properties.CNTRY_CODE===country){
-                return "#ff9999";
+                return "#FFCA28";
             } else {
                 return "none";
             }    
@@ -185,7 +200,7 @@ function focusOnAdm(country,adm){
         .attr("fill",function(d){
             if(d.properties.CNTRY_CODE===country){
                 if(d.properties.PCODE_REF===adm){
-                    return "#ff9999";
+                    return "#FFCA28";
                 } else {
                     return "#ffffff";
                 }
