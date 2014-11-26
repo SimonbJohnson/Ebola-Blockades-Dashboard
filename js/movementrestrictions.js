@@ -95,11 +95,10 @@ function generateBarChart(id) {
             .tickSize(0)
             .orient('left');
     
-    var colors = d3.scale.category10();
-
     var svg = d3.select(id).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
+                .attr("class", "svg")
                 .append("g")
                 .attr("transform", "translate(" + (margin.left + 50) + "," + margin.top + ")");
 
@@ -115,7 +114,13 @@ function generateBarChart(id) {
             .attr("y", function(d) { return y(d.x); })
             .attr("x", function(d) { return x(d.y0); })
             .attr("height", y.rangeBand())
-            .attr("width", function(d) { return x(d.y); });
+            .attr("width", function(d) { return x(d.y); })
+            .on("click",function(d){ 
+                setTypeRestrictions(d.x, moveRes); 
+                var country = getCountryName();
+                if (country !== "")
+                    transitionBarChart("#bar_chart", country, d.x);  
+            });
     
     svg.append("g")
         .attr("class", "x_axis")
@@ -129,12 +134,14 @@ function generateBarChart(id) {
     // color description
      restriction_nature.forEach(function (s, i) {
         svg.append('rect')
+            .attr("class", "legend_color")
             .attr('fill', colors(i))
             .attr('width', 10)
             .attr('height', 10)
             .attr('x', i%2*width/2)
             .attr('y', Math.floor(i/2) * 24 + 130);
         svg.append('text')
+            .attr("class", "legend_text")
             .attr('fill', 'black')
             .attr('x', i%2*width/2+20)
             .attr('y', Math.floor(i/2) * 24 + 140)
@@ -142,7 +149,8 @@ function generateBarChart(id) {
     }); 
 }
 
-function transitionBarChart(id, country) {
+// parameter "selected" is used for opacity of unseleted bar.
+function transitionBarChart(id, country, selected) {
     restriction_type = moveRes.map(function (d) {
         return d.Type_of_restriction;
     });
@@ -191,17 +199,57 @@ function transitionBarChart(id, country) {
     var layer = d3.select(id).selectAll("g.layer")
                 .data(layers);
                
-    rect = layer.selectAll("rect") 
-        .data(function(d) { return d; })  // match the new data to the existing rectangles
-        .transition().duration(500)
-        .attr("y", function(d) { return y(d.x); })
-        .attr("x", function(d) { return x(d.y0); })
-        .attr("height", y.rangeBand())
-        .attr("width", function(d) { return x(d.y); }); 
+    if (selected === "") {
+        rect = layer.selectAll("rect") 
+            .data(function(d) { return d; })  // match the new data to the existing rectangles
+            .transition().duration(500)
+            .attr("y", function(d) { return y(d.x); })
+            .attr("x", function(d) { return x(d.y0); })
+            .attr("height", y.rangeBand())
+            .attr("width", function(d) { return x(d.y); })
+            .style("opacity", 1);
+    }
+    else {
+        rect = layer.selectAll("rect") 
+            .data(function(d) { return d; })  // match the new data to the existing rectangles
+            .transition().duration(500)
+            .attr("y", function(d) { return y(d.x); })
+            .attr("x", function(d) { return x(d.y0); })
+            .attr("height", y.rangeBand())
+            .attr("width", function(d) { return x(d.y); })
+            .style("opacity", function(d) { 
+                if (d.x === selected) 
+                    return 1;
+                else 
+                    return 0.3;
+             });
+    }
 
     d3.select("g.x_axis")
         .attr("transform", "translate(0," + [height-160] + ")") // corresponding to y
         .call(xAxis);
+        
+    // color description
+    dataset_restriction_nature = sortRestructionNature(dataset, restriction_nature);
+    d3.selectAll("rect.legend_color").remove();
+    d3.selectAll("text.legend_text").remove();
+    svg = d3.select("svg.svg g");
+    dataset_restriction_nature.forEach(function (s, i) {
+        var a=getColor(restriction_nature, dataset_restriction_nature, i);
+        svg.append('rect')
+            .attr("class", "legend_color")
+            .attr('fill', colors(getColor(restriction_nature, dataset_restriction_nature, i)))
+            .attr('width', 10)
+            .attr('height', 10)
+            .attr('x', i%2*width/2)
+            .attr('y', Math.floor(i/2) * 24 + 140);
+        svg.append('text')
+            .attr("class", "legend_text")
+            .attr('fill', 'black')
+            .attr('x', i%2*width/2+20)
+            .attr('y', Math.floor(i/2) * 24 + 150)
+            .text(s);
+    });
 }
 
 function generateMap(){
@@ -245,7 +293,7 @@ function generateMap(){
                 d3.select(this).attr("fill","#ffffff");
                 setCountryRestrictions(d.properties.NAME,moveRes);
                 focusOn(d.properties.ISO3);
-                transitionBarChart("#bar_chart", d.properties.NAME);
+                transitionBarChart("#bar_chart", d.properties.NAME, "");
             }            
         });
 
@@ -303,6 +351,52 @@ function generateMap(){
                 
 }
 
+/* this function is used to get the the color of the layer 
+   which assigned by the first stack building   */
+function getColor(org_order, new_order, pos) {
+    for (var i=0; i<org_order.length; i++)
+        if (org_order[i] === new_order[pos]) {
+            return i;
+        }
+}
+
+/* This function is used for resort the list of the layers
+   if the layer exists, reutrn true; if not, return false   */
+function sortRestructionNature(data, s){ 
+    var new_order = [];
+    for (var i=0; i<data.length; i++) {
+        for (var j=0; j<s.length; j++)  {
+            if (data[i][s[j]] !== 0 ) {
+                new_order.push(s[j]);
+            }
+        }
+    }
+    return new_order;
+}
+
+function getCountryName(){ 
+    if (focusCountry === "") return "";
+    if (focusCountry === "GIN") return "Guinea";
+    if (focusCountry === "SLE") return "Sierra Leone";
+    if (focusCountry === "LBR") return "Liberia";
+}
+
+function setTypeRestrictions(type, data){ 
+    var country = "";
+    country = getCountryName();
+    if (country === "")
+        return;
+    
+    var htmlcur = "<h3>Restrictions regarding "+type+" in "+country+"</h3>";
+    $.each(data,function(i,e){
+        if(e.Country === country && e.Type_of_restriction === type){
+            htmlcur = htmlcur + convertTypeResToHTML(e);
+        }        
+    });
+    $("#current_geo").html(htmlcur);
+    $("#sub_geo").html(""); // remove old contents
+    $("#sup_geo").html(""); // remove old contents
+}
 
 function setCountryRestrictions(country,data){
     var htmlcur = "<h3>Country Level Restrictions for "+country+"</h3>";
@@ -356,6 +450,10 @@ function convertAdmResToHTML(e){
 }
 
 function convertCountryResToHTML(e){
+    return "<div class='res'><h4>"+e.Type_of_restriction+" - "+e.Nature_of_restriction+"</h4><p>Starting from "+e.Date_from+"</p><p>"+e.Notes+"</p><p><a href='"+e.Source_Hyperlink+"' target='_blank'>"+e.Source+"</a></p></div>";
+}
+
+function convertTypeResToHTML(e){ 
     return "<div class='res'><h4>"+e.Type_of_restriction+" - "+e.Nature_of_restriction+"</h4><p>Starting from "+e.Date_from+"</p><p>"+e.Notes+"</p><p><a href='"+e.Source_Hyperlink+"' target='_blank'>"+e.Source+"</a></p></div>";
 }
 
@@ -416,6 +514,8 @@ function stickydiv(){
 
 var focusCountry="";
 var focusAdm ="";
+var colors = d3.scale.category10();
+
 generateBarChart("#bar_chart");
 generateMap();
 
