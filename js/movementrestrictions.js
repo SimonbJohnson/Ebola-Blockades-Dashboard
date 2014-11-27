@@ -2,7 +2,7 @@ function removeDuplicates(dataset) {
     return dataset.reduce(function(a,b){if(a.indexOf(b)<0)a.push(b);return a;},[]);
 }
 
-function buildObject(country, restriction_type, restriction_nature, dataset) {
+function buildCountryObject(country, restriction_type, restriction_nature, dataset) {
     for (var i = 0; i < restriction_type.length; i++) {  
         var temp_data = [];
         var obj_data = {};
@@ -42,6 +42,35 @@ function buildObject(country, restriction_type, restriction_nature, dataset) {
     return dataset;
 }
 
+function buildRegionObject(country, region, restriction_type, restriction_nature, dataset) { 
+    console.log ("buildRegionObject: "+region);
+    if(country==="Liberia"){
+        adm = "adm1_id";
+    } else {
+        adm = "adm2_id";
+    }
+    
+    for (var i = 0; i < restriction_type.length; i++) {  
+        var temp_data = [];
+        var obj_data = {};
+        for (var j =0; j < moveRes.length; j++) {
+            if (restriction_type[i] === moveRes[j].Type_of_restriction && region === moveRes[j][adm]) {
+                temp_data.push(moveRes[j].Nature_of_restriction);        
+            }
+        }
+        for (var j = 0; j < restriction_nature.length; j++) {
+            var count = 0;
+            for (x in temp_data) {
+                if (restriction_nature[j] === temp_data[x])
+                    count++;
+            }
+            obj_data[restriction_nature[j]] = count;
+        }    
+        dataset.push(obj_data);
+    };
+    return dataset;
+}
+
 function generateBarChart(id) {
     restriction_type = moveRes.map(function (d) {
         return d.Type_of_restriction;
@@ -59,7 +88,7 @@ function generateBarChart(id) {
 
     // get the data from moveRes in data.js, the final data for the bar chart is in the array dataset[]
     var dataset = [];
-        dataset = buildObject("All", restriction_type, restriction_nature, dataset);
+        dataset = buildCountryObject("All", restriction_type, restriction_nature, dataset);
 
     var stack = d3.layout.stack(),
         layers = stack(d3.range(num_layers).map(function(d) { 
@@ -116,10 +145,11 @@ function generateBarChart(id) {
             .attr("height", y.rangeBand())
             .attr("width", function(d) { return x(d.y); })
             .on("click",function(d){ 
-                setTypeRestrictions(d.x, moveRes); 
                 var country = getCountryName();
-                if (country !== "")
-                    transitionBarChart("#bar_chart", country, d.x);  
+                if (country !== "" && focusAdm === "") {
+                    setTypeRestrictions(d.x, moveRes); 
+                    transitionBarChart("#bar_chart", country, "", d.x); 
+                }  
             });
     
     svg.append("g")
@@ -150,7 +180,7 @@ function generateBarChart(id) {
 }
 
 // parameter "selected" is used for opacity of unseleted bar.
-function transitionBarChart(id, country, selected) {
+function transitionBarChart(id, country, region, selected) {
     restriction_type = moveRes.map(function (d) {
         return d.Type_of_restriction;
     });
@@ -166,7 +196,10 @@ function transitionBarChart(id, country, selected) {
     
     // get the data from moveRes in data.js, the final data for the bar chart is in the array dataset[]
     var dataset = [];
-    dataset = buildObject(country, restriction_type, restriction_nature, dataset);
+    if (region === "") 
+        dataset = buildCountryObject(country, restriction_type, restriction_nature, dataset); 
+    else
+        dataset = buildRegionObject(country, region, restriction_type, restriction_nature, dataset);
     
     var stack = d3.layout.stack(),
         layers = stack(d3.range(num_layers).map(function(d) { 
@@ -194,6 +227,7 @@ function transitionBarChart(id, country, selected) {
     
     var xAxis = d3.svg.axis()
             .scale(x)
+            .tickFormat(d3.format("d"))
             .orient('bottom');  
 
     var layer = d3.select(id).selectAll("g.layer")
@@ -209,7 +243,7 @@ function transitionBarChart(id, country, selected) {
             .attr("width", function(d) { return x(d.y); })
             .style("opacity", 1);
     }
-    else {
+    else if (focusAdm === "") {
         rect = layer.selectAll("rect") 
             .data(function(d) { return d; })  // match the new data to the existing rectangles
             .transition().duration(500)
@@ -293,7 +327,7 @@ function generateMap(){
                 d3.select(this).attr("fill","#ffffff");
                 setCountryRestrictions(d.properties.NAME,moveRes);
                 focusOn(d.properties.ISO3);
-                transitionBarChart("#bar_chart", d.properties.NAME, "");
+                transitionBarChart("#bar_chart", d.properties.NAME, "", "");
             }            
         });
 
@@ -345,6 +379,7 @@ function generateMap(){
         .on("click",function(d){
             setadmRestrictions(d.properties.CNTRY_NAME,d.properties.PCODE_REF,d.properties.NAME_REF,moveRes);
             focusOnAdm(d.properties.CNTRY_CODE,d.properties.PCODE_REF);
+            transitionBarChart("#bar_chart", d.properties.CNTRY_NAME, d.properties.PCODE_REF, "");
         })
         .append("svg:title")
         .text(function(d) { return d.properties.NAME_REF; });                
