@@ -9,18 +9,12 @@ function buildCountryObject(country, restriction_type, restriction_nature, datas
         for (var j =0; j < moveRes.length; j++) {
             if (country === "All") {
                 if (restriction_type[i] === moveRes[j].Type_of_restriction) {
-                    if (temp_data.length === 0)
-                        temp_data[0] = moveRes[j].Nature_of_restriction;
-                    else
-                        temp_data.push(moveRes[j].Nature_of_restriction);        
+                    temp_data.push(moveRes[j].Nature_of_restriction);        
                 }
             }
             else {
                 if (restriction_type[i] === moveRes[j].Type_of_restriction && country === moveRes[j].Country) {
-                    if (temp_data.length === 0)
-                        temp_data[0] = moveRes[j].Nature_of_restriction;
-                    else
-                        temp_data.push(moveRes[j].Nature_of_restriction);        
+                    temp_data.push(moveRes[j].Nature_of_restriction);        
                 }
             }
         }
@@ -32,12 +26,7 @@ function buildCountryObject(country, restriction_type, restriction_nature, datas
             }
             obj_data[restriction_nature[j]] = count;
         }    
-        if (dataset.length === 0) {
-            dataset[0] = obj_data;
-        }
-        else {
-            dataset.push(obj_data);
-        }
+        dataset.push(obj_data);
     };
     return dataset;
 }
@@ -127,11 +116,12 @@ function generateBarChart(id) {
     var svg = d3.select(id).append("svg")
                 .attr("width", width + margin.left + margin.right)
                 .attr("height", height + margin.top + margin.bottom)
-                .attr("class", "svg")
-                .append("g")
+                .attr("class", "svg");
+        
+    var bar = svg.append("g")  
                 .attr("transform", "translate(" + (margin.left + 50) + "," + margin.top + ")");
 
-    var layer = svg.selectAll(".layer")
+    var layer = bar.selectAll(".layer") 
                 .data(layers)
                 .enter().append("g")
                 .attr("class", "layer")
@@ -152,31 +142,16 @@ function generateBarChart(id) {
                 }  
             });
     
-    svg.append("g")
+    bar.append("g") 
         .attr("class", "x_axis")
         .attr("transform", "translate(0," + [height-160] + ")") // corresponding to y
         .call(xAxis);
 
-    svg.append('g')
+    bar.append('g') // vo change svg -> bar
         .attr('class', 'y_axis')
         .call(yAxis);
     
-    // color description
-     restriction_nature.forEach(function (s, i) {
-        svg.append('rect')
-            .attr("class", "legend_color")
-            .attr('fill', colors(i))
-            .attr('width', 10)
-            .attr('height', 10)
-            .attr('x', i%2*width/2)
-            .attr('y', Math.floor(i/2) * 24 + 130);
-        svg.append('text')
-            .attr("class", "legend_text")
-            .attr('fill', 'black')
-            .attr('x', i%2*width/2+20)
-            .attr('y', Math.floor(i/2) * 24 + 140)
-            .text(s);
-    }); 
+    barChartLegend(svg, restriction_nature, dataset, "");
 }
 
 // parameter "selected" is used for opacity of unseleted bar.
@@ -216,6 +191,7 @@ function transitionBarChart(id, country, region, selected) {
      var margin = {top: 0, right: 10, bottom: 20, left: 50},
         width = 683 - margin.left - margin.right,
         height = 263 - margin.top - margin.bottom;
+     var selected_type = "";
     
     var x = d3.scale.linear()
             .domain([0, max_stack])
@@ -252,10 +228,13 @@ function transitionBarChart(id, country, region, selected) {
             .attr("height", y.rangeBand())
             .attr("width", function(d) { return x(d.y); })
             .style("opacity", function(d) { 
-                if (d.x === selected) 
+                if (d.x === selected)  {
+                    selected_type = d.x;
                     return 1;
-                else 
+                }
+                else {
                     return 0.3;
+                }
              });
     }
 
@@ -264,26 +243,52 @@ function transitionBarChart(id, country, region, selected) {
         .call(xAxis);
         
     // color description
-    dataset_restriction_nature = sortRestructionNature(dataset, restriction_nature);
     d3.selectAll("rect.legend_color").remove();
     d3.selectAll("text.legend_text").remove();
-    svg = d3.select("svg.svg g");
-    dataset_restriction_nature.forEach(function (s, i) {
-        var a=getColor(restriction_nature, dataset_restriction_nature, i);
-        svg.append('rect')
-            .attr("class", "legend_color")
-            .attr('fill', colors(getColor(restriction_nature, dataset_restriction_nature, i)))
-            .attr('width', 10)
-            .attr('height', 10)
-            .attr('x', i%2*width/2)
-            .attr('y', Math.floor(i/2) * 24 + 140);
-        svg.append('text')
-            .attr("class", "legend_text")
-            .attr('fill', 'black')
-            .attr('x', i%2*width/2+20)
-            .attr('y', Math.floor(i/2) * 24 + 150)
-            .text(s);
-    });
+    svg = d3.select("svg.svg"); // vo
+    
+    var selected_index = "";
+    for (i=0; i<restriction_type.length; i++) 
+        if (restriction_type[i] === selected_type)
+            selected_index = i;
+    
+    barChartLegend(svg, restriction_nature, dataset, selected_index);
+}
+
+function barChartLegend(svg, restriction_nature, dataset, selected_index) {
+    for (i=0; i<dataset.length; i++) {
+        var xPos = 0; 
+        var yPos = i * 24;;
+        dataset_restriction_nature = sortRestructionNature(dataset[i], restriction_nature);
+        dataset_restriction_nature.forEach(function (s, j) {
+            legend_color = svg.append('rect')
+                .attr("class", "legend_color")
+                .attr('fill', colors(getColor(restriction_nature, dataset_restriction_nature, j)))
+                .attr('width', 10)
+                .attr('height', 10)
+                .attr('x', xPos)
+                .attr('y', yPos + 130);
+            legend_text = svg.append('text')
+                .attr("class", "legend_text")
+                .attr("id",function(s){return dataset_restriction_nature[j].replace(/\s/g, '');})
+                .attr('fill', 'black')
+                .attr('x', xPos + 20)
+                .attr('y', yPos + 140)
+                .text(s);
+
+            if (selected_index === i || selected_index === "") {
+                legend_color.style("opacity", 1);
+                legend_text.style("opacity", 1);
+            }
+            else {
+                legend_color.style("opacity", 0.3);
+                legend_text.style("opacity", 0.3);
+            }
+            id = "#"+dataset_restriction_nature[j].replace(/\s/g, '');
+            xPos += $(id).width() + 40;
+            console.log("next Pos: "+xPos+" "+yPos);
+        }); 
+    }
 }
 
 function generateMap(){
@@ -399,13 +404,11 @@ function getColor(org_order, new_order, pos) {
    if the layer exists, reutrn true; if not, return false   */
 function sortRestructionNature(data, s){ 
     var new_order = [];
-    for (var i=0; i<data.length; i++) {
-        for (var j=0; j<s.length; j++)  {
-            if (data[i][s[j]] !== 0 ) {
-                new_order.push(s[j]);
-            }
+    for (var i=0; i<s.length; i++) {
+       if (data[s[i]] !== 0 ) {
+            new_order.push(s[i]);
         }
-    }
+    }  
     return new_order;
 }
 
