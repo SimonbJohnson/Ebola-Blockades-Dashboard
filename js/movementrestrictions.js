@@ -103,8 +103,8 @@ function generateMap(){
             }
         })
         .on("click",function(d){
-            setadmRestrictions(d.properties.CNTRY_NAME,d.properties.PCODE_REF,d.properties.NAME_REF,moveRes);
-            focusOnAdm(d.properties.CNTRY_CODE,d.properties.PCODE_REF);
+            setadmRestrictions(d.properties.CNTRY_NAME,d.properties.PCODEUSE,d.properties.NAMEUSE,moveRes);
+            focusOnAdm(d.properties.CNTRY_CODE,d.properties.PCODEUSE);
         })
         .append("svg:title")
         .text(function(d) { return d.properties.NAME_REF; });                
