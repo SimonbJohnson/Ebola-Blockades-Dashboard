@@ -37,7 +37,7 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"Channel News Asia - Sierra Leone Law Ebola Victims",
     "Source_Hyperlink":"http://www.channelnewsasia.com/news/world/two-year-jail-terms-for/1326170.html",
-    "Notes":"Outlawed the “harbouring” of Ebola victims - risk a jail sentence of up to two years."
+    "Notes":"Outlawed the �harbouring� of Ebola victims - risk a jail sentence of up to two years."
   },
   {
     "id":"ID1003",
@@ -278,26 +278,6 @@ var moveRes = [
     "Source":"International SOS - Sierra Leone",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=397&language_id=ENG",
     "Notes":"WHO states that a lockdown began in Koinadugu district on 28 November."
-  },
-  {
-    "id":"ID1021",
-    "Scale_of_restriction":"Domestic",
-    "Country":"Sierra Leone",
-    "Location":"Tonkolili",
-    "International_border":"n/a",
-    "Type_of_restriction":"Area Blockade",
-    "Nature_of_restriction":"Quarantine",
-    "adm1":"Northern",
-    "adm1_id":"SLE02",
-    "adm2":"Tonkolili",
-    "adm2_id":"SLE0205",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"01/12/2014",
-    "Date_to":"17/01/2015",
-    "Source":"International SOS - Sierra Leone",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=397&language_id=ENG",
-    "Notes":"The government has quarantined Tonkolili district, which will remain in place until the 15 December. During this period, the borders of the district will be sealed and the authorities will conduct door to door awareness raising campaigns. Vehicles passing through the district will be allowed on the condition that they do not stop at all on their journey."
   },
   {
     "id":"ID1023",
@@ -834,8 +814,8 @@ var moveRes = [
     "adm3":"n/a",
     "adm3_id":"n/a",
     "Date_from":"30/07/2014",
-    "Date_to":"n/a",
-    "Source":"BBC News - Ebola: Liberia Shuts Schools to Tackle Outbreak",
+    "Date_to":"02/02/2015",
+    "Source":"BBC News - Ebola: Liberia Shuts Schools to Tackle Outbreak / Reuters - Liberia plans to reopen schools",
     "Source_Hyperlink":"http://www.bbc.co.uk/news/world-africa-28576010",
     "Notes":"All schools are closed."
   },
@@ -980,7 +960,7 @@ var moveRes = [
     "Notes":"Quarantine led by AFL taskforce."
   },
   {
-    "id":"ID1075",
+    "id":"ID1076",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Voinjama City",
@@ -1000,7 +980,7 @@ var moveRes = [
     "Notes":"Restricted movement of people."
   },
   {
-    "id":"ID1076",
+    "id":"ID1077",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Tubmanburg",
@@ -1020,7 +1000,7 @@ var moveRes = [
     "Notes":"Neighbourhood of Tubmanburg City has been quarantined following the discovery of dead bodies."
   },
   {
-    "id":"ID1077",
+    "id":"ID1078",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Bo Waterside Town",
@@ -1040,7 +1020,7 @@ var moveRes = [
     "Notes":"Restricted movement of people and military presence. Order to shoot at Sierra Leones crossing the border."
   },
   {
-    "id":"ID1078",
+    "id":"ID1079",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Sinje Town",
@@ -1060,7 +1040,7 @@ var moveRes = [
     "Notes":"Military presence."
   },
   {
-    "id":"ID1079",
+    "id":"ID1080",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Po River Town",
@@ -1080,7 +1060,7 @@ var moveRes = [
     "Notes":"PRECISE LOCATION CURRENTLY UNKNOWN. Military presence."
   },
   {
-    "id":"ID1080",
+    "id":"ID1081",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Gbarkedu Town",
@@ -1100,7 +1080,7 @@ var moveRes = [
     "Notes":"Quarantined as one of the most affected towns in the epicentre border region."
   },
   {
-    "id":"ID1081",
+    "id":"ID1082",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Cheborken Town",
@@ -1120,7 +1100,7 @@ var moveRes = [
     "Notes":"PRECISE LOCATION CURRENTLY UNKNOWN. Quarantined by local authorities after their refusal to allow safe burial and specimen collection."
   },
   {
-    "id":"ID1082",
+    "id":"ID1083",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Parluken Town",
@@ -1140,7 +1120,7 @@ var moveRes = [
     "Notes":"The Parluken community is under quarantine following the first reported Ebola cases in the area."
   },
   {
-    "id":"ID1083",
+    "id":"ID1084",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Gwee Town",
@@ -1160,7 +1140,7 @@ var moveRes = [
     "Notes":"Quarantined following the death of two persons (mother and child)."
   },
   {
-    "id":"ID1084",
+    "id":"ID1085",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Taylor Town",
@@ -1180,7 +1160,7 @@ var moveRes = [
     "Notes":"Quarantined following outbreak."
   },
   {
-    "id":"ID1085",
+    "id":"ID1086",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Polay Town",
@@ -1200,7 +1180,7 @@ var moveRes = [
     "Notes":"Polay Town is quarantined following an outbreak of 4 confirmed cases."
   },
   {
-    "id":"ID1086",
+    "id":"ID1087",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Saclepea",
@@ -1220,7 +1200,7 @@ var moveRes = [
     "Notes":"Saclepea was quarantined following an outbreak."
   },
   {
-    "id":"ID1087",
+    "id":"ID1088",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Lonfaye Town",
@@ -1240,7 +1220,7 @@ var moveRes = [
     "Notes":"Lonfaye Town agreed to be put in quarantine following a local outbreak."
   },
   {
-    "id":"ID1088",
+    "id":"ID1089",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Yekepa Town",
@@ -1260,7 +1240,7 @@ var moveRes = [
     "Notes":"Yekepa has been quarantined following an outbreak."
   },
   {
-    "id":"ID1089",
+    "id":"ID1090",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Woloquah",
@@ -1280,7 +1260,7 @@ var moveRes = [
     "Notes":"Woloquah Town has been quarantined following an outbreak."
   },
   {
-    "id":"ID1090",
+    "id":"ID1091",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Gleyansiasu",
@@ -1300,7 +1280,7 @@ var moveRes = [
     "Notes":"PRECISE LOCATION CURRENTLY UNKNOWN. Self-quarantined."
   },
   {
-    "id":"ID1091",
+    "id":"ID1092",
     "Scale_of_restriction":"Domestic",
     "Country":"Liberia",
     "Location":"Quewin",
@@ -1320,7 +1300,7 @@ var moveRes = [
     "Notes":"PRECISE LOCATION CURRENTLY UNKNOWN. Quarantined community."
   },
   {
-    "id":"ID1092",
+    "id":"ID1093",
     "Scale_of_restriction":"Domestic",
     "Country":"Guinea",
     "Location":"Guinea",
@@ -1340,7 +1320,7 @@ var moveRes = [
     "Notes":"Government announces schools will not open for the new school year until ebola has subsided. Primary schools, secondary schools and universities are closed."
   },
   {
-    "id":"ID1093",
+    "id":"ID1094",
     "Scale_of_restriction":"Domestic",
     "Country":"Guinea",
     "Location":"Guinea",
@@ -1360,7 +1340,7 @@ var moveRes = [
     "Notes":"Guinea declares a state of emergency and non-specific 'cordon sanitaire' declared forbidding contacts of Ebola patients from travelling."
   },
   {
-    "id":"ID1094",
+    "id":"ID1095",
     "Scale_of_restriction":"Domestic",
     "Country":"Guinea",
     "Location":"Guinea",
@@ -1380,7 +1360,27 @@ var moveRes = [
     "Notes":"Ban announced on moving bodies from own town to another until the end of the epidemic."
   },
   {
-    "id":"ID1095",
+    "id":"ID1096",
+    "Scale_of_restriction":"Domestic",
+    "Country":"Guinea",
+    "Location":"Guinea",
+    "International_border":"n/a",
+    "Type_of_restriction":"National Law",
+    "Nature_of_restriction":"Movement Order",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"09/01/2015",
+    "Date_to":"n/a",
+    "Source":"Acaps - Global Emergency Overview",
+    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/geo%20%281%29_0.pdf",
+    "Notes":"The Prime Minister announced measures against resistance to the Ebola response including prosecution of those who hide patients from medical teams or those who hold medical missions hostage."
+  },
+  {
+    "id":"ID1097",
     "Scale_of_restriction":"Domestic",
     "Country":"Guinea",
     "Location":"Macenta Ctre (City)",
@@ -1400,7 +1400,7 @@ var moveRes = [
     "Notes":"Authorities restricting access."
   },
   {
-    "id":"ID1097",
+    "id":"ID1099",
     "Scale_of_restriction":"Domestic",
     "Country":"Guinea",
     "Location":"Gueckedou",
@@ -1420,7 +1420,7 @@ var moveRes = [
     "Notes":"WHO quarantine zone."
   },
   {
-    "id":"ID1101",
+    "id":"ID1103",
     "Scale_of_restriction":"Domestic",
     "Country":"Senegal",
     "Location":"Senegal",
@@ -1440,7 +1440,7 @@ var moveRes = [
     "Notes":"Senegal's Minister of Interior requested the closure of 16 weekly markets along the border with Guinea."
   },
   {
-    "id":"ID1102",
+    "id":"ID1104",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"Gueckedou",
@@ -1460,7 +1460,7 @@ var moveRes = [
     "Notes":"Ebola affected countries agreed at an emergency summit to impose a cross-border isolation zone at the epicentre of the outbreak. Often termed 'unified sector'."
   },
   {
-    "id":"ID1103",
+    "id":"ID1105",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"Foya",
@@ -1480,7 +1480,7 @@ var moveRes = [
     "Notes":"Ebola affected countries agreed at an emergency summit to impose a cross-border isolation zone at the epicentre of the outbreak. Often termed 'unified sector'."
   },
   {
-    "id":"ID1104",
+    "id":"ID1106",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"Kenema",
@@ -1500,7 +1500,7 @@ var moveRes = [
     "Notes":"Ebola affected countries agreed at an emergency summit to impose a cross-border isolation zone at the epicentre of the outbreak. Often termed 'unified sector'."
   },
   {
-    "id":"ID1105",
+    "id":"ID1107",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"Roberts International Airport",
@@ -1520,7 +1520,7 @@ var moveRes = [
     "Notes":"Roberts International Airport has limited services and suspended flights. All aircraft for Roberts International Airport must request a ground reservation at least 48 hours before arrival."
   },
   {
-    "id":"ID1106",
+    "id":"ID1108",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"Lungi International Airport",
@@ -1540,51 +1540,11 @@ var moveRes = [
     "Notes":"The International Organisation for Migration Sierra Leone border management team received authorisation from the Sierra Leone Civil Aviation Authority to start full entry/exit health screening at Lungi Airport."
   },
   {
-    "id":"ID1113",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Zambia",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"10/08/2014",
-    "Date_to":"n/a",
-    "Source":"Express - Zambia border controls",
-    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
-    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
-  },
-  {
-    "id":"ID1114",
-    "Scale_of_restriction":"International",
-    "Country":"Liberia",
-    "Location":"n/a",
-    "International_border":"Zambia",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"10/08/2014",
-    "Date_to":"n/a",
-    "Source":"Express - Zambia border controls",
-    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
-    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
-  },
-  {
-    "id":"ID1115",
+    "id":"ID1109",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
-    "Location":"n/a",
-    "International_border":"Zambia",
+    "Location":"Freetown International Airport",
+    "International_border":"n/a",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -1593,17 +1553,77 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"10/08/2014",
+    "Date_from":"06/01/2015",
     "Date_to":"n/a",
-    "Source":"Express - Zambia border controls",
-    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
-    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
+    "Source":"Acaps - Global Emergency Overview",
+    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/geo%20%282%29_3.pdf",
+    "Notes":"The government imposed additional screening measures at Freetown International Airport after two airport staff apparently caught Ebola."
   },
   {
     "id":"ID1116",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
+    "International_border":"Zambia",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"10/08/2014",
+    "Date_to":"n/a",
+    "Source":"Express - Zambia border controls",
+    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
+    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
+  },
+  {
+    "id":"ID1117",
+    "Scale_of_restriction":"International",
+    "Country":"Liberia",
+    "Location":"n/a",
+    "International_border":"Zambia",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"10/08/2014",
+    "Date_to":"n/a",
+    "Source":"Express - Zambia border controls",
+    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
+    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
+  },
+  {
+    "id":"ID1118",
+    "Scale_of_restriction":"International",
+    "Country":"Sierra Leone",
+    "Location":"n/a",
+    "International_border":"Zambia",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"10/08/2014",
+    "Date_to":"n/a",
+    "Source":"Express - Zambia border controls",
+    "Source_Hyperlink":"http://www.express.co.uk/news/world/497380/Ebola-Nigeria-Emergency-British-Airways-Goodluck-Jonathan-Kent-Brantly",
+    "Notes":"Zambia bans nationals from travelling to affected countries and entry of travellers from affected region."
+  },
+  {
+    "id":"ID1119",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"Chad",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -1620,7 +1640,7 @@ var moveRes = [
     "Notes":"Chad has suspended all flights from Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1117",
+    "id":"ID1120",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -1640,7 +1660,7 @@ var moveRes = [
     "Notes":"Chad has suspended all flights from Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1118",
+    "id":"ID1121",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
@@ -1660,7 +1680,7 @@ var moveRes = [
     "Notes":"Chad has suspended all flights from Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1119",
+    "id":"ID1122",
     "Scale_of_restriction":"International",
     "Country":"Nigeria",
     "Location":"n/a",
@@ -1680,7 +1700,7 @@ var moveRes = [
     "Notes":"Chad has suspended all flights from Nigeria."
   },
   {
-    "id":"ID1120",
+    "id":"ID1123",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -1700,7 +1720,7 @@ var moveRes = [
     "Notes":"Cameroon has suspended all flights to Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1121",
+    "id":"ID1124",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -1720,7 +1740,7 @@ var moveRes = [
     "Notes":"Cameroon has suspended all flights to Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1122",
+    "id":"ID1125",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
@@ -1740,7 +1760,7 @@ var moveRes = [
     "Notes":"Cameroon has suspended all flights to Guinea, Liberia and Sierra Leone."
   },
   {
-    "id":"ID1123",
+    "id":"ID1126",
     "Scale_of_restriction":"International",
     "Country":"Nigeria",
     "Location":"n/a",
@@ -1760,71 +1780,11 @@ var moveRes = [
     "Notes":"Cameroon has suspended all flights from Nigeria."
   },
   {
-    "id":"ID1125",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"South Sudan",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"14/08/2014",
-    "Date_to":"n/a",
-    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
-    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
-    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
-  },
-  {
-    "id":"ID1126",
-    "Scale_of_restriction":"International",
-    "Country":"Liberia",
-    "Location":"n/a",
-    "International_border":"South Sudan",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"14/08/2014",
-    "Date_to":"n/a",
-    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
-    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
-    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
-  },
-  {
-    "id":"ID1127",
-    "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
-    "Location":"n/a",
-    "International_border":"South Sudan",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"14/08/2014",
-    "Date_to":"n/a",
-    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
-    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
-    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
-  },
-  {
     "id":"ID1128",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
-    "International_border":"Namibia",
+    "International_border":"South Sudan",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -1833,17 +1793,57 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"11/09/2014",
+    "Date_from":"14/08/2014",
     "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Namibia banned entry to travellers from Ebola affected countries."
+    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
+    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
+    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
   },
   {
     "id":"ID1129",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
+    "International_border":"South Sudan",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"14/08/2014",
+    "Date_to":"n/a",
+    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
+    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
+    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
+  },
+  {
+    "id":"ID1130",
+    "Scale_of_restriction":"International",
+    "Country":"Sierra Leone",
+    "Location":"n/a",
+    "International_border":"South Sudan",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"14/08/2014",
+    "Date_to":"n/a",
+    "Source":"South Sudan US Embassy - Travel Advisory Security Message for U.S. Citizens",
+    "Source_Hyperlink":"http://southsudan.usembassy.gov/sm81414.html",
+    "Notes":"South Sudan has suspended all flights to and from Guinea, Liberia and Sierra Leone."
+  },
+  {
+    "id":"ID1131",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"Namibia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -1860,7 +1860,27 @@ var moveRes = [
     "Notes":"Namibia banned entry to travellers from Ebola affected countries."
   },
   {
-    "id":"ID1130",
+    "id":"ID1132",
+    "Scale_of_restriction":"International",
+    "Country":"Liberia",
+    "Location":"n/a",
+    "International_border":"Namibia",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"11/09/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Namibia banned entry to travellers from Ebola affected countries."
+  },
+  {
+    "id":"ID1133",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
@@ -1880,7 +1900,7 @@ var moveRes = [
     "Notes":"Namibia banned entry to travellers from Ebola affected countries."
   },
   {
-    "id":"ID1135",
+    "id":"ID1138",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -1900,7 +1920,7 @@ var moveRes = [
     "Notes":"Cape Verde banned entry to travellers from Guinea, Liberia and Sierra Leone for three months."
   },
   {
-    "id":"ID1136",
+    "id":"ID1139",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -1920,7 +1940,7 @@ var moveRes = [
     "Notes":"Cape Verde banned entry to travellers from Guinea, Liberia and Sierra Leone for three months."
   },
   {
-    "id":"ID1137",
+    "id":"ID1140",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
@@ -1940,7 +1960,7 @@ var moveRes = [
     "Notes":"Cape Verde banned entry to travellers from Guinea, Liberia and Sierra Leone for three months."
   },
   {
-    "id":"ID1138",
+    "id":"ID1141",
     "Scale_of_restriction":"International",
     "Country":"Nigeria",
     "Location":"n/a",
@@ -1960,71 +1980,11 @@ var moveRes = [
     "Notes":"Cape Verde banned entry to travellers from Nigeria for three months."
   },
   {
-    "id":"ID1139",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Rwanda",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"22/08/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
-  },
-  {
-    "id":"ID1140",
-    "Scale_of_restriction":"International",
-    "Country":"Liberia",
-    "Location":"n/a",
-    "International_border":"Rwanda",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"22/08/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
-  },
-  {
-    "id":"ID1141",
-    "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
-    "Location":"n/a",
-    "International_border":"Rwanda",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"22/08/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
-  },
-  {
     "id":"ID1142",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
-    "International_border":"South Africa",
+    "International_border":"Rwanda",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2033,18 +1993,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"21/08/2014",
+    "Date_from":"22/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"South Africa restricted entry to all non-citizens travelling from Guinea, Liberia and Sierra Leone although assured that this could be waived for 'absolutely essential travel'."
+    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
   },
   {
     "id":"ID1143",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"South Africa",
+    "International_border":"Rwanda",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2053,17 +2013,37 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"21/08/2014",
+    "Date_from":"22/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"South Africa restricted entry to all non-citizens travelling from Guinea, Liberia and Sierra Leone although assured that this could be waived for 'absolutely essential travel'."
+    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
   },
   {
     "id":"ID1144",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
+    "International_border":"Rwanda",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"22/08/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Rwanda has banned entry to travellers who have visited Guinea, Liberia or Sierra Leone in the 22 days prior to travel."
+  },
+  {
+    "id":"ID1145",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"South Africa",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -2080,31 +2060,11 @@ var moveRes = [
     "Notes":"South Africa restricted entry to all non-citizens travelling from Guinea, Liberia and Sierra Leone although assured that this could be waived for 'absolutely essential travel'."
   },
   {
-    "id":"ID1145",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Kenya",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"19/08/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Kenya has suspended entry of travellers from Guinea, Liberia and Sierra Leone excluding health professionals supporting Ebola response and/or Kenyan citizens."
-  },
-  {
     "id":"ID1146",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Kenya",
+    "International_border":"South Africa",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2113,17 +2073,37 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"19/08/2014",
+    "Date_from":"21/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Kenya has suspended entry of travellers from Guinea, Liberia and Sierra Leone excluding health professionals supporting Ebola response and/or Kenyan citizens."
+    "Notes":"South Africa restricted entry to all non-citizens travelling from Guinea, Liberia and Sierra Leone although assured that this could be waived for 'absolutely essential travel'."
   },
   {
     "id":"ID1147",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
+    "International_border":"South Africa",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"21/08/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"South Africa restricted entry to all non-citizens travelling from Guinea, Liberia and Sierra Leone although assured that this could be waived for 'absolutely essential travel'."
+  },
+  {
+    "id":"ID1148",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"Kenya",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -2140,31 +2120,11 @@ var moveRes = [
     "Notes":"Kenya has suspended entry of travellers from Guinea, Liberia and Sierra Leone excluding health professionals supporting Ebola response and/or Kenyan citizens."
   },
   {
-    "id":"ID1148",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Gabon",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"22/08/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Gabon has banned all flights from countries affected by Ebola."
-  },
-  {
     "id":"ID1149",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Gabon",
+    "International_border":"Kenya",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2173,17 +2133,37 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"22/08/2014",
+    "Date_from":"19/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Gabon has banned all flights from countries affected by Ebola."
+    "Notes":"Kenya has suspended entry of travellers from Guinea, Liberia and Sierra Leone excluding health professionals supporting Ebola response and/or Kenyan citizens."
   },
   {
     "id":"ID1150",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
+    "International_border":"Kenya",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"19/08/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Kenya has suspended entry of travellers from Guinea, Liberia and Sierra Leone excluding health professionals supporting Ebola response and/or Kenyan citizens."
+  },
+  {
+    "id":"ID1151",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"Gabon",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -2200,31 +2180,11 @@ var moveRes = [
     "Notes":"Gabon has banned all flights from countries affected by Ebola."
   },
   {
-    "id":"ID1151",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Belize",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"18/10/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
-  },
-  {
     "id":"ID1152",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Belize",
+    "International_border":"Gabon",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2233,18 +2193,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"18/10/2014",
+    "Date_from":"22/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
+    "Notes":"Gabon has banned all flights from countries affected by Ebola."
   },
   {
     "id":"ID1153",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Belize",
+    "International_border":"Gabon",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2253,16 +2213,16 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"18/10/2014",
+    "Date_from":"22/08/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
+    "Notes":"Gabon has banned all flights from countries affected by Ebola."
   },
   {
     "id":"ID1154",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Belize",
     "Type_of_restriction":"Border Closure",
@@ -2282,9 +2242,9 @@ var moveRes = [
   {
     "id":"ID1155",
     "Scale_of_restriction":"International",
-    "Country":"Guinea",
+    "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Antigua and Barbuda",
+    "International_border":"Belize",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2293,18 +2253,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"17/10/2014",
+    "Date_from":"18/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
+    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
   },
   {
     "id":"ID1156",
     "Scale_of_restriction":"International",
-    "Country":"Liberia",
+    "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Antigua and Barbuda",
+    "International_border":"Belize",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2313,18 +2273,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"17/10/2014",
+    "Date_from":"18/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
+    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
   },
   {
     "id":"ID1157",
     "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
+    "Country":"Nigeria",
     "Location":"n/a",
-    "International_border":"Antigua and Barbuda",
+    "International_border":"Belize",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2333,18 +2293,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"17/10/2014",
+    "Date_from":"18/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
+    "Notes":"Belize has barred entry to nationals from Ebola affected countries or travellers that have visited these countries in the past 30 days."
   },
   {
     "id":"ID1158",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
-    "International_border":"Trinidad and Tobago",
+    "International_border":"Antigua and Barbuda",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2353,18 +2313,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"16/10/2014",
+    "Date_from":"17/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
+    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
   },
   {
     "id":"ID1159",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Trinidad and Tobago",
+    "International_border":"Antigua and Barbuda",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2373,18 +2333,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"16/10/2014",
+    "Date_from":"17/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
+    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
   },
   {
     "id":"ID1160",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Trinidad and Tobago",
+    "International_border":"Antigua and Barbuda",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2393,16 +2353,16 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"16/10/2014",
+    "Date_from":"17/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
+    "Notes":"Antigua and Barbuda has barred entry to nationals from Guinea, Liberia and Sierra Leone and any travellers that have visited these countries in the past 21 days."
   },
   {
     "id":"ID1161",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Trinidad and Tobago",
     "Type_of_restriction":"Border Closure",
@@ -2422,9 +2382,9 @@ var moveRes = [
   {
     "id":"ID1162",
     "Scale_of_restriction":"International",
-    "Country":"Guinea",
+    "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Guyana",
+    "International_border":"Trinidad and Tobago",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2437,14 +2397,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
+    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
   },
   {
     "id":"ID1163",
     "Scale_of_restriction":"International",
-    "Country":"Liberia",
+    "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Guyana",
+    "International_border":"Trinidad and Tobago",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2457,14 +2417,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
+    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
   },
   {
     "id":"ID1164",
     "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
+    "Country":"Nigeria",
     "Location":"n/a",
-    "International_border":"Guyana",
+    "International_border":"Trinidad and Tobago",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2477,12 +2437,12 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
+    "Notes":"Trinidad and Tobago denying entry to nationals of Guinea, Liberia, Nigeria and Sierra Leone and any travellers that have visited these countries in the past six weeks will be quarantined for 21 days upon arrival."
   },
   {
     "id":"ID1165",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Guyana",
     "Type_of_restriction":"Border Closure",
@@ -2502,9 +2462,9 @@ var moveRes = [
   {
     "id":"ID1166",
     "Scale_of_restriction":"International",
-    "Country":"Guinea",
+    "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Jamaica",
+    "International_border":"Guyana",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2517,14 +2477,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
+    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
   },
   {
     "id":"ID1167",
     "Scale_of_restriction":"International",
-    "Country":"Liberia",
+    "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Jamaica",
+    "International_border":"Guyana",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2537,14 +2497,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
+    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
   },
   {
     "id":"ID1168",
     "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
+    "Country":"Nigeria",
     "Location":"n/a",
-    "International_border":"Jamaica",
+    "International_border":"Guyana",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2557,14 +2517,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
+    "Notes":"Guyana is not issuing visas to nationals from Guinea, Liberia, Sierra Leone and Nigeria."
   },
   {
     "id":"ID1169",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
-    "International_border":"Colombia",
+    "International_border":"Jamaica",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2573,18 +2533,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"14/10/2014",
+    "Date_from":"16/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
+    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
   },
   {
     "id":"ID1170",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Colombia",
+    "International_border":"Jamaica",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2593,18 +2553,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"14/10/2014",
+    "Date_from":"16/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
+    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
   },
   {
     "id":"ID1171",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Colombia",
+    "International_border":"Jamaica",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2613,16 +2573,16 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"14/10/2014",
+    "Date_from":"16/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
+    "Notes":"Kenya imposed ban on entry to travellers arriving from Guinea, Liberia and Sierra Leone and those that have visited within four weeks prior to arrival."
   },
   {
     "id":"ID1172",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Colombia",
     "Type_of_restriction":"Border Closure",
@@ -2642,7 +2602,7 @@ var moveRes = [
   {
     "id":"ID1173",
     "Scale_of_restriction":"International",
-    "Country":"Senegal",
+    "Country":"Liberia",
     "Location":"n/a",
     "International_border":"Colombia",
     "Type_of_restriction":"Border Closure",
@@ -2662,9 +2622,9 @@ var moveRes = [
   {
     "id":"ID1174",
     "Scale_of_restriction":"International",
-    "Country":"Guinea",
+    "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Mauritius",
+    "International_border":"Colombia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2673,18 +2633,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"08/10/2014",
+    "Date_from":"14/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
+    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
   },
   {
     "id":"ID1175",
     "Scale_of_restriction":"International",
-    "Country":"Liberia",
+    "Country":"Nigeria",
     "Location":"n/a",
-    "International_border":"Mauritius",
+    "International_border":"Colombia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2693,18 +2653,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"08/10/2014",
+    "Date_from":"14/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
+    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
   },
   {
     "id":"ID1176",
     "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
+    "Country":"Senegal",
     "Location":"n/a",
-    "International_border":"Mauritius",
+    "International_border":"Colombia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2713,16 +2673,16 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"08/10/2014",
+    "Date_from":"14/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
+    "Notes":"Colombia banned entry to travellers that have visited Guinea, Liberia, Nigeria, Senegal and Sierra Leone in the past four weeks. The restriction would also reportedly apply to Colombian nationals."
   },
   {
     "id":"ID1177",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Mauritius",
     "Type_of_restriction":"Border Closure",
@@ -2742,7 +2702,7 @@ var moveRes = [
   {
     "id":"ID1178",
     "Scale_of_restriction":"International",
-    "Country":"Senegal",
+    "Country":"Liberia",
     "Location":"n/a",
     "International_border":"Mauritius",
     "Type_of_restriction":"Border Closure",
@@ -2762,9 +2722,9 @@ var moveRes = [
   {
     "id":"ID1179",
     "Scale_of_restriction":"International",
-    "Country":"Guinea",
+    "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Seychelles",
+    "International_border":"Mauritius",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2777,14 +2737,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
   },
   {
     "id":"ID1180",
     "Scale_of_restriction":"International",
-    "Country":"Liberia",
+    "Country":"Nigeria",
     "Location":"n/a",
-    "International_border":"Seychelles",
+    "International_border":"Mauritius",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2797,14 +2757,14 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
   },
   {
     "id":"ID1181",
     "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
+    "Country":"Senegal",
     "Location":"n/a",
-    "International_border":"Seychelles",
+    "International_border":"Mauritius",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2817,12 +2777,12 @@ var moveRes = [
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+    "Notes":"Mauritius banned entry to all travellers that have visited Nigeria, Sierra Leone, Guinea, Liberia and Senegal in the last two months. The authorities have announced that entry restrictions for travellers from Senegal and Nigeria will be lifted on 10 Oct and 17 Oct respectively if not further cases of Ebola are reported."
   },
   {
     "id":"ID1182",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Seychelles",
     "Type_of_restriction":"Border Closure",
@@ -2842,7 +2802,7 @@ var moveRes = [
   {
     "id":"ID1183",
     "Scale_of_restriction":"International",
-    "Country":"Guinea-Bissau",
+    "Country":"Liberia",
     "Location":"n/a",
     "International_border":"Seychelles",
     "Type_of_restriction":"Border Closure",
@@ -2862,6 +2822,66 @@ var moveRes = [
   {
     "id":"ID1184",
     "Scale_of_restriction":"International",
+    "Country":"Sierra Leone",
+    "Location":"n/a",
+    "International_border":"Seychelles",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"08/10/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+  },
+  {
+    "id":"ID1185",
+    "Scale_of_restriction":"International",
+    "Country":"Nigeria",
+    "Location":"n/a",
+    "International_border":"Seychelles",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"08/10/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+  },
+  {
+    "id":"ID1186",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea-Bissau",
+    "Location":"n/a",
+    "International_border":"Seychelles",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"08/10/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Seychelles suspended entry to travellers that have visited Sierra Leone, Liberia, Guinea-Bissau, Guinea or Nigeria 28 days prior to their journey, with the exception of Seychellois citizens."
+  },
+  {
+    "id":"ID1187",
+    "Scale_of_restriction":"International",
     "Country":"North Korea",
     "Location":"n/a",
     "International_border":"n/a",
@@ -2880,71 +2900,11 @@ var moveRes = [
     "Notes":"North Korea has banned entry to all foreign tourists over Ebola-related fears."
   },
   {
-    "id":"ID1185",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Canada",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"31/10/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
-  },
-  {
-    "id":"ID1186",
-    "Scale_of_restriction":"International",
-    "Country":"Liberia",
-    "Location":"n/a",
-    "International_border":"Canada",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"31/10/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
-  },
-  {
-    "id":"ID1187",
-    "Scale_of_restriction":"International",
-    "Country":"Sierra Leone",
-    "Location":"n/a",
-    "International_border":"Canada",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"31/10/2014",
-    "Date_to":"n/a",
-    "Source":"International SOS - Travel security advisories - Flight bans and closures",
-    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
-  },
-  {
     "id":"ID1188",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
-    "International_border":"Australia",
+    "International_border":"Canada",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2953,18 +2913,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"28/10/2014",
+    "Date_from":"31/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Australia has suspended the issuance of visas to travellers from Guinea, Liberia and Sierra Leone and those with permanent visas can enter only after 21 quarantine."
+    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
   },
   {
     "id":"ID1189",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Australia",
+    "International_border":"Canada",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -2973,17 +2933,37 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"28/10/2014",
+    "Date_from":"31/10/2014",
     "Date_to":"n/a",
     "Source":"International SOS - Travel security advisories - Flight bans and closures",
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
-    "Notes":"Australia has suspended the issuance of visas to travellers from Guinea, Liberia and Sierra Leone and those with permanent visas can enter only after 21 quarantine."
+    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
   },
   {
     "id":"ID1190",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
+    "International_border":"Canada",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"31/10/2014",
+    "Date_to":"n/a",
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Canada has suspended the issuance of visas to those that have from Ebola-affected countries in the past three months."
+  },
+  {
+    "id":"ID1191",
+    "Scale_of_restriction":"International",
+    "Country":"Guinea",
+    "Location":"n/a",
     "International_border":"Australia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
@@ -3000,31 +2980,11 @@ var moveRes = [
     "Notes":"Australia has suspended the issuance of visas to travellers from Guinea, Liberia and Sierra Leone and those with permanent visas can enter only after 21 quarantine."
   },
   {
-    "id":"ID1191",
-    "Scale_of_restriction":"International",
-    "Country":"Guinea",
-    "Location":"n/a",
-    "International_border":"Central African Republic",
-    "Type_of_restriction":"Border Closure",
-    "Nature_of_restriction":"Flight Restrictions",
-    "adm1":"n/a",
-    "adm1_id":"n/a",
-    "adm2":"n/a",
-    "adm2_id":"n/a",
-    "adm3":"n/a",
-    "adm3_id":"n/a",
-    "Date_from":"11/11/2014",
-    "Date_to":"n/a",
-    "Source":"UNICEF - CAR Humanitarian SitRep",
-    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
-    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
-  },
-  {
     "id":"ID1192",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
-    "International_border":"Central African Republic",
+    "International_border":"Australia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -3033,18 +2993,18 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"11/11/2014",
+    "Date_from":"28/10/2014",
     "Date_to":"n/a",
-    "Source":"UNICEF - CAR Humanitarian SitRep",
-    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
-    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Australia has suspended the issuance of visas to travellers from Guinea, Liberia and Sierra Leone and those with permanent visas can enter only after 21 quarantine."
   },
   {
     "id":"ID1193",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
-    "International_border":"Central African Republic",
+    "International_border":"Australia",
     "Type_of_restriction":"Border Closure",
     "Nature_of_restriction":"Flight Restrictions",
     "adm1":"n/a",
@@ -3053,16 +3013,16 @@ var moveRes = [
     "adm2_id":"n/a",
     "adm3":"n/a",
     "adm3_id":"n/a",
-    "Date_from":"11/11/2014",
+    "Date_from":"28/10/2014",
     "Date_to":"n/a",
-    "Source":"UNICEF - CAR Humanitarian SitRep",
-    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
-    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
+    "Source":"International SOS - Travel security advisories - Flight bans and closures",
+    "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
+    "Notes":"Australia has suspended the issuance of visas to travellers from Guinea, Liberia and Sierra Leone and those with permanent visas can enter only after 21 quarantine."
   },
   {
     "id":"ID1194",
     "Scale_of_restriction":"International",
-    "Country":"Nigeria",
+    "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Central African Republic",
     "Type_of_restriction":"Border Closure",
@@ -3082,6 +3042,66 @@ var moveRes = [
   {
     "id":"ID1195",
     "Scale_of_restriction":"International",
+    "Country":"Liberia",
+    "Location":"n/a",
+    "International_border":"Central African Republic",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"11/11/2014",
+    "Date_to":"n/a",
+    "Source":"UNICEF - CAR Humanitarian SitRep",
+    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
+    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
+  },
+  {
+    "id":"ID1196",
+    "Scale_of_restriction":"International",
+    "Country":"Sierra Leone",
+    "Location":"n/a",
+    "International_border":"Central African Republic",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"11/11/2014",
+    "Date_to":"n/a",
+    "Source":"UNICEF - CAR Humanitarian SitRep",
+    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
+    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
+  },
+  {
+    "id":"ID1197",
+    "Scale_of_restriction":"International",
+    "Country":"Nigeria",
+    "Location":"n/a",
+    "International_border":"Central African Republic",
+    "Type_of_restriction":"Border Closure",
+    "Nature_of_restriction":"Flight Restrictions",
+    "adm1":"n/a",
+    "adm1_id":"n/a",
+    "adm2":"n/a",
+    "adm2_id":"n/a",
+    "adm3":"n/a",
+    "adm3_id":"n/a",
+    "Date_from":"11/11/2014",
+    "Date_to":"n/a",
+    "Source":"UNICEF - CAR Humanitarian SitRep",
+    "Source_Hyperlink":"http://reliefweb.int/sites/reliefweb.int/files/resources/UNICEF%20CAR%20SitRep%207%20Nov%202014.pdf",
+    "Notes":"CAR issued a ministerial decree prohibiting entrance into the country of persons from Guinea, Liberia, Sierra Leone and Nigeria."
+  },
+  {
+    "id":"ID1198",
+    "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
     "International_border":"Senegal",
@@ -3100,7 +3120,7 @@ var moveRes = [
     "Notes":"Senegal has re-closed land border with Guinea. Originally closed in February 2014 but then re-opened in May 2014. Supposedly humanitarian transport is allowed through but this has been disputed by those in the field."
   },
   {
-    "id":"ID1196",
+    "id":"ID1199",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3120,7 +3140,7 @@ var moveRes = [
     "Notes":"All borders closed except for three: one into sierra leone (Bo Waterside Crossing), one into guinea (Foya Crossing) and one that crosses both (Ganta Crossing)."
   },
   {
-    "id":"ID1197",
+    "id":"ID1200",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3140,7 +3160,7 @@ var moveRes = [
     "Notes":"All borders closed except for three: one into sierra leone (Bo Waterside Crossing), one into guinea (Foya Crossing) and one that crosses both (Ganta Crossing)."
   },
   {
-    "id":"ID1198",
+    "id":"ID1201",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3160,7 +3180,7 @@ var moveRes = [
     "Notes":"All borders closed except for three: one into sierra leone (Bo Waterside Crossing), one into guinea (Foya Crossing) and one that crosses both (Ganta Crossing)."
   },
   {
-    "id":"ID1199",
+    "id":"ID1202",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3180,7 +3200,7 @@ var moveRes = [
     "Notes":"The Bo Waterside Crossing to Sierra Leone and the Foya Crossing to Guinea are now also closed."
   },
   {
-    "id":"ID1200",
+    "id":"ID1203",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3200,7 +3220,7 @@ var moveRes = [
     "Notes":"The Bo Waterside Crossing to Sierra Leone and the Foya Crossing to Guinea are now also closed."
   },
   {
-    "id":"ID1201",
+    "id":"ID1204",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -3220,7 +3240,7 @@ var moveRes = [
     "Notes":"Ivory Coast closes land border with Liberia and Guinea and all official entry points into Liberia and Guinea are closed. Announced opening of 'humanitarian corridor' on 1/9/14."
   },
   {
-    "id":"ID1202",
+    "id":"ID1205",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3240,7 +3260,7 @@ var moveRes = [
     "Notes":"Ivory Coast closes land border with Liberia and Guinea and all official entry points into Liberia and Guinea are closed. Announced opening of 'humanitarian corridor' on 1/9/14."
   },
   {
-    "id":"ID1203",
+    "id":"ID1206",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -3260,7 +3280,7 @@ var moveRes = [
     "Notes":"Guinea closes land borders with Sierra Leone and Liberia. Guinean government plans to set up 15 health control points along these borders."
   },
   {
-    "id":"ID1204",
+    "id":"ID1207",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -3280,7 +3300,7 @@ var moveRes = [
     "Notes":"Guinea closes land borders with Sierra Leone and Liberia. Guinean government plans to set up 15 health control points along these borders."
   },
   {
-    "id":"ID1207",
+    "id":"ID1210",
     "Scale_of_restriction":"International",
     "Country":"Nigeria",
     "Location":"n/a",
@@ -3300,7 +3320,7 @@ var moveRes = [
     "Notes":"Cameroon closed land border with Nigeria. Note refugees fleeing Boko Haram attacks have been crossing the border."
   },
   {
-    "id":"ID1208",
+    "id":"ID1211",
     "Scale_of_restriction":"International",
     "Country":"Kenya",
     "Location":"n/a",
@@ -3320,7 +3340,7 @@ var moveRes = [
     "Notes":"Kenya closed Suam border crossing with Uganda due to reports of an Ebola-related death in Bukwo district (Uganda)."
   },
   {
-    "id":"ID1209",
+    "id":"ID1212",
     "Scale_of_restriction":"International",
     "Country":"Mali",
     "Location":"n/a",
@@ -3340,7 +3360,7 @@ var moveRes = [
     "Notes":"Government of Mauritania has ordered the closing of all border crossings with Mali after its first reported case of Ebola."
   },
   {
-    "id":"ID1213",
+    "id":"ID1216",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3360,7 +3380,7 @@ var moveRes = [
     "Notes":"Liberia denying any crew to disembark at seaports until Ebola epidemic subsided."
   },
   {
-    "id":"ID1214",
+    "id":"ID1217",
     "Scale_of_restriction":"International",
     "Country":"Nigeria",
     "Location":"n/a",
@@ -3380,7 +3400,7 @@ var moveRes = [
     "Notes":"Cameroon closed sea border with Nigeria."
   },
   {
-    "id":"ID1218",
+    "id":"ID1221",
     "Scale_of_restriction":"International",
     "Country":"Guinea",
     "Location":"n/a",
@@ -3400,7 +3420,7 @@ var moveRes = [
     "Notes":"Gabon has banned all ships from countries affected by Ebola."
   },
   {
-    "id":"ID1219",
+    "id":"ID1222",
     "Scale_of_restriction":"International",
     "Country":"Liberia",
     "Location":"n/a",
@@ -3420,7 +3440,7 @@ var moveRes = [
     "Notes":"Gabon has banned all ships from countries affected by Ebola."
   },
   {
-    "id":"ID1220",
+    "id":"ID1223",
     "Scale_of_restriction":"International",
     "Country":"Sierra Leone",
     "Location":"n/a",
@@ -3439,4 +3459,4 @@ var moveRes = [
     "Source_Hyperlink":"https://www.internationalsos.com/ebola/index.cfm?content_id=435&language_id=ENG",
     "Notes":"Gabon has banned all ships from countries affected by Ebola."
   }
-];
+]
