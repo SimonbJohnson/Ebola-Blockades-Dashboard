@@ -59,16 +59,20 @@ function generateMap(){
         .enter()
         .append("text")
         .attr("x", function(d,i){
-                    return path.centroid(d)[0]-20;})
+                    return path.centroid(d)[0]-40;})
         .attr("y", function(d,i){
                     return path.centroid(d)[1];})
-        .attr("dy", ".55em")
+        .attr("dy", ".2em")
         .attr("class","maplabel")
-        .style("font-size","12px")
-        .attr("opacity",0.4)
+        .style("font-size","14px")
+        .attr("opacity",0.6)
         .text(function(d,i){
+            if(d.properties.ISO3 === "GIN" ||
+               d.properties.ISO3 === "SLE" ||
+               d.properties.ISO3 === "LBR"){
                     return d.properties.NAME;
-                });
+            }
+        });
                 
 
     var g = svg.append("g");    
