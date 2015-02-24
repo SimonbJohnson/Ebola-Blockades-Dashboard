@@ -81,7 +81,7 @@ function generateMap(){
         .attr("stroke",'none')
         .attr("stroke-width","0px")
         .attr("fill",'none')
-        .attr("id",function(d){return d.properties.PCODE_REF;})
+        .attr("id",function(d){return d.properties.PCODEUSE;})
         .attr("class","region")
         .on("mouseover",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
@@ -92,7 +92,7 @@ function generateMap(){
         })
         .on("mouseout",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
-                //if(focusAdm==="" || d.properties.PCODE_REF ===focusAdm){
+                //if(focusAdm==="" || d.properties.PCODEUSE ===focusAdm){
                 //    d3.select(this).attr("fill","#FFCA28");
                 //} else {
                 //    d3.select(this).attr("fill","#ffffff");
@@ -107,7 +107,7 @@ function generateMap(){
             focusOnAdm(d.properties.CNTRY_CODE,d.properties.PCODEUSE);
         })
         .append("svg:title")
-        .text(function(d) { return d.properties.NAME_REF; });                
+        .text(function(d) { return d.properties.NAMEUSE; });                
                 
 }
 
@@ -199,7 +199,7 @@ function focusOnAdm(country,adm){
     d3.selectAll(".region")
         .attr("fill",function(d){
             if(d.properties.CNTRY_CODE===country){
-                if(d.properties.PCODE_REF===adm){
+                if(d.properties.PCODEUSE===adm){
                     return "#FFCA28";
                 } else {
                     return "#ffffff";
