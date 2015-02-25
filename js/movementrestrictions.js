@@ -59,16 +59,20 @@ function generateMap(){
         .enter()
         .append("text")
         .attr("x", function(d,i){
-                    return path.centroid(d)[0]-20;})
+                    return path.centroid(d)[0]-40;})
         .attr("y", function(d,i){
                     return path.centroid(d)[1];})
-        .attr("dy", ".55em")
+        .attr("dy", ".2em")
         .attr("class","maplabel")
-        .style("font-size","12px")
-        .attr("opacity",0.4)
+        .style("font-size","14px")
+        .attr("opacity",0.6)
         .text(function(d,i){
+            if(d.properties.ISO3 === "GIN" ||
+               d.properties.ISO3 === "SLE" ||
+               d.properties.ISO3 === "LBR"){
                     return d.properties.NAME;
-                });
+            }
+        });
                 
 
     var g = svg.append("g");    
@@ -81,7 +85,7 @@ function generateMap(){
         .attr("stroke",'none')
         .attr("stroke-width","0px")
         .attr("fill",'none')
-        .attr("id",function(d){return d.properties.PCODE_REF;})
+        .attr("id",function(d){return d.properties.PCODEUSE;})
         .attr("class","region")
         .on("mouseover",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
@@ -89,14 +93,18 @@ function generateMap(){
                         .attr("stroke","steelblue")
                         .attr("stroke-width",5);
             }
+            focusOnAdm(
+                d.properties.CNTRY_CODE,
+                d.properties.PCODEUSE
+            );
         })
         .on("mouseout",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
-                //if(focusAdm==="" || d.properties.PCODE_REF ===focusAdm){
-                //    d3.select(this).attr("fill","#FFCA28");
-                //} else {
-                //    d3.select(this).attr("fill","#ffffff");
-                //}
+                if(focusAdm==="" || d.properties.PCODEUSE ===focusAdm){
+                    d3.select(this).attr("fill","#FFCA28");
+                } else {
+                    d3.select(this).attr("fill","#ffffff");
+                }
                     d3.select(this)
                         .attr("stroke","#aaaaaa")
                         .attr("stroke-width",1);                
@@ -107,7 +115,7 @@ function generateMap(){
             focusOnAdm(d.properties.CNTRY_CODE,d.properties.PCODEUSE);
         })
         .append("svg:title")
-        .text(function(d) { return d.properties.NAME_REF; });                
+        .text(function(d) { return d.properties.NAMEUSE; });                
                 
 }
 
@@ -199,7 +207,7 @@ function focusOnAdm(country,adm){
     d3.selectAll(".region")
         .attr("fill",function(d){
             if(d.properties.CNTRY_CODE===country){
-                if(d.properties.PCODE_REF===adm){
+                if(d.properties.PCODEUSE===adm){
                     return "#FFCA28";
                 } else {
                     return "#ffffff";
