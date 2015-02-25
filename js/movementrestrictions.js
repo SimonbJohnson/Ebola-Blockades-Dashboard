@@ -93,6 +93,10 @@ function generateMap(){
                         .attr("stroke","steelblue")
                         .attr("stroke-width",5);
             }
+            focusOnAdm(
+                d.properties.CNTRY_CODE,
+                d.properties.PCODEUSE
+            );
         })
         .on("mouseout",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
