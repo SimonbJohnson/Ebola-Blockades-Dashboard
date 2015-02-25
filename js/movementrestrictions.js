@@ -96,11 +96,11 @@ function generateMap(){
         })
         .on("mouseout",function(d){
             if(d.properties.CNTRY_CODE===focusCountry){
-                //if(focusAdm==="" || d.properties.PCODEUSE ===focusAdm){
-                //    d3.select(this).attr("fill","#FFCA28");
-                //} else {
-                //    d3.select(this).attr("fill","#ffffff");
-                //}
+                if(focusAdm==="" || d.properties.PCODEUSE ===focusAdm){
+                    d3.select(this).attr("fill","#FFCA28");
+                } else {
+                    d3.select(this).attr("fill","#ffffff");
+                }
                     d3.select(this)
                         .attr("stroke","#aaaaaa")
                         .attr("stroke-width",1);                
